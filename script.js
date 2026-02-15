@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================
+     FORMULARIO GOOGLE
+  ========================= */
+  const FORM_URL="https://docs.google.com/forms/d/e/1FAIpQLSd8Aa3XbUNnkYVEDa1lKZ7mTeP-T2QLguIFR6fdmXS6iekeHQ/viewform?usp=publish-editor";
+
+
+  /* =========================
      1) DATOS SEMANA (TUS TEXTOS EXACTOS)
   ========================= */
   const DAYS = ["L","M","X","J","V","S","D"];
@@ -124,10 +130,11 @@ Disfruta el día sin culpa.`,
     }
   ];
 
+
   /* =========================
-     2) ESTADOS + FRASES (SIN FOTO)
-     (en sesión: mientras la web está abierta)
+     2) ESTADOS + FRASES
   ========================= */
+
   const STATUS = {
     good:{ e:"😁", p:"Muy bien hoy 💚" },
     mid: { e:"😯", p:"Vas bien, sigue 💚" },
@@ -135,17 +142,17 @@ Disfruta el día sin culpa.`,
   };
 
   const PHRASES = {
-    good: [
+    good:[
       "Hoy sumaste salud. Eso vale muchísimo 💚",
       "Constancia tranquila: así se consigue 💚",
       "Hoy lo hiciste muy bien. Sigue así 💚"
     ],
-    mid: [
+    mid:[
       "No hace falta perfecto, hace falta constante 💚",
       "Un paso pequeño hoy, un cambio grande en 3 meses 💚",
       "Lo importante es volver al plan sin culpa 💚"
     ],
-    bad: [
+    bad:[
       "Descansar también es avanzar. Sin culpa 💚",
       "Hoy no salió, mañana sí. Tú puedes 💚",
       "Tu objetivo sigue ahí. Solo continúa 💚"
@@ -154,7 +161,6 @@ Disfruta el día sin culpa.`,
 
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-  // progreso en sesión
   const progress = Array.from({length:7}, () => ({ diet:false, work:false }));
   let currentDay = 0;
 
@@ -166,103 +172,81 @@ Disfruta el día sin culpa.`,
   };
 
   const todayIndex = () => {
-    const d = new Date().getDay();      // 0 dom .. 6 sab
-    return d === 0 ? 6 : d - 1;         // 0 lun .. 6 dom
+    const d = new Date().getDay();
+    return d === 0 ? 6 : d - 1;
   };
 
+
   /* =========================
-     3) UI refs
+     3) UI
   ========================= */
+
   const homeCard = document.getElementById("homeCard");
   const dayCard  = document.getElementById("dayCard");
   const gymCard  = document.getElementById("gymCard");
+  const commitCard = document.getElementById("commitCard");
 
-  const weekGrid   = document.getElementById("weekGrid");
-  const phraseText = document.getElementById("phraseText");
-  const phraseHint = document.getElementById("phraseHint");
-
-  const dayTitle = document.getElementById("dayTitle");
-  const dayMood  = document.getElementById("dayMood");
-  const dietText = document.getElementById("dietText");
-  const workText = document.getElementById("workText");
-  const dietToggle = document.getElementById("dietToggle");
-  const workToggle = document.getElementById("workToggle");
-
-  const showHome = () => {
-    homeCard.style.display = "block";
-    dayCard.style.display  = "none";
-    gymCard.style.display  = "none";
-  };
-
-  const showDay = () => {
-    homeCard.style.display = "none";
-    dayCard.style.display  = "block";
-    gymCard.style.display  = "none";
-  };
-
-  const showGym = () => {
-    homeCard.style.display = "none";
-    dayCard.style.display  = "none";
-    gymCard.style.display  = "block";
-  };
+  function show(section){
+    homeCard.style.display="none";
+    dayCard.style.display="none";
+    gymCard.style.display="none";
+    commitCard.style.display="none";
+    section.style.display="block";
+  }
 
   function renderHome(){
-    weekGrid.innerHTML = "";
+    const weekGrid = document.getElementById("weekGrid");
+    weekGrid.innerHTML="";
 
     for(let i=0;i<7;i++){
-      const st = getState(i);
-      const div = document.createElement("div");
-      div.className = `dayBtn ${st}`;
-      div.innerHTML = `<div class="dow">${DAYS[i]}</div><div class="emoji">${STATUS[st].e}</div>`;
-      div.addEventListener("click", () => { currentDay = i; renderDay(); });
+      const st=getState(i);
+      const div=document.createElement("div");
+      div.className=`dayBtn ${st}`;
+      div.innerHTML=`<div class="dow">${DAYS[i]}</div><div class="emoji">${STATUS[st].e}</div>`;
+      div.onclick=()=>{currentDay=i;renderDay();};
       weekGrid.appendChild(div);
     }
 
-    const t = todayIndex();
-    const stToday = getState(t);
-    phraseText.textContent = pick(PHRASES[stToday]);
-    phraseHint.textContent = "Consejo: entra en tu día y marca Dieta/Ejercicio cuando lo completes.";
+    const stToday=getState(todayIndex());
+    document.getElementById("phraseText").textContent=pick(PHRASES[stToday]);
+    document.getElementById("phraseHint").textContent="Consejo: entra en tu día y marca Dieta/Ejercicio cuando lo completes.";
 
-    showHome();
+    show(homeCard);
   }
 
   function renderDay(){
-    const st = getState(currentDay);
-
-    dayTitle.textContent = FULL[currentDay];
-    dayMood.textContent  = `${STATUS[st].e} ${STATUS[st].p}`;
-
-    dietText.textContent = WEEK[currentDay].diet;
-    workText.textContent = WEEK[currentDay].work;
-
-    dietToggle.classList.toggle("on", progress[currentDay].diet);
-    workToggle.classList.toggle("on", progress[currentDay].work);
-
-    showDay();
+    const st=getState(currentDay);
+    document.getElementById("dayTitle").textContent=FULL[currentDay];
+    document.getElementById("dayMood").textContent=`${STATUS[st].e} ${STATUS[st].p}`;
+    document.getElementById("dietText").textContent=WEEK[currentDay].diet;
+    document.getElementById("workText").textContent=WEEK[currentDay].work;
+    document.getElementById("dietToggle").classList.toggle("on",progress[currentDay].diet);
+    document.getElementById("workToggle").classList.toggle("on",progress[currentDay].work);
+    show(dayCard);
   }
 
-  dietToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    progress[currentDay].diet = !progress[currentDay].diet;
+  document.getElementById("dietToggle").onclick=()=>{
+    progress[currentDay].diet=!progress[currentDay].diet;
     renderDay();
-    renderHome();
-    showDay();
-  });
+  };
 
-  workToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    progress[currentDay].work = !progress[currentDay].work;
+  document.getElementById("workToggle").onclick=()=>{
+    progress[currentDay].work=!progress[currentDay].work;
     renderDay();
-    renderHome();
-    showDay();
-  });
+  };
 
-  document.getElementById("closeDay").addEventListener("click", renderHome);
-  document.getElementById("btnHome").addEventListener("click", renderHome);
+  document.getElementById("closeDay").onclick=renderHome;
+  document.getElementById("btnHome").onclick=renderHome;
+
+  document.getElementById("openCommit").onclick=()=>show(commitCard);
+  document.getElementById("closeCommit").onclick=renderHome;
+  document.getElementById("goToForm").onclick=()=>window.open(FORM_URL,"_blank");
+
 
   /* =========================
-     4) TU PEQUEÑO GYM (exactamente funcional)
+     GYM COMPLETO
   ========================= */
+
   const gymData={
     yoga:{
       title:"CLASES DE YOGA",
@@ -299,18 +283,13 @@ Disfruta el día sin culpa.`,
     }
   };
 
-  const gymTitle = document.getElementById("gymTitle");
-  const gymSubtitle = document.getElementById("gymSubtitle");
-  const gymDays = document.getElementById("gymDays");
-
   document.querySelectorAll(".gymItem").forEach(item=>{
     item.onclick=()=>{
       const key=item.dataset.gym;
       const data=gymData[key];
-
-      gymTitle.textContent=data.title;
-      gymSubtitle.textContent=data.subtitle;
-
+      document.getElementById("gymTitle").textContent=data.title;
+      document.getElementById("gymSubtitle").textContent=data.subtitle;
+      const gymDays=document.getElementById("gymDays");
       gymDays.innerHTML="";
       data.days.forEach(d=>{
         const div=document.createElement("div");
@@ -319,17 +298,14 @@ Disfruta el día sin culpa.`,
         div.onclick=()=>window.open(d[2],"_blank","noopener");
         gymDays.appendChild(div);
       });
-
-      showGym();
+      show(gymCard);
     };
   });
 
   document.getElementById("closeGym").onclick=renderHome;
 
-  /* =========================
-     START
-  ========================= */
-  currentDay = todayIndex();
+  /* START */
+  currentDay=todayIndex();
   renderHome();
 
 });
