@@ -109,10 +109,10 @@ CENA (antes de las 21:00)
     },
     {
       diet:`Hoy decides tú
-• Come lo que te apetezca
-• Escucha tu hambre real
-• Evita comer por ansiedad
-
+✔ Desayuna normal
+✔ Come algo que te guste y dobla la proteína 
+✔ Si quieres un postre, disfrutalo sin culpas
+✔ Cena ligero
 Disfruta el día sin culpa.`,
       work:`• Muévete como te apetezca
 • Pasear, ordenar la casa o descansar
@@ -309,3 +309,4 @@ Disfruta el día sin culpa.`,
   renderHome();
 
 });
+
