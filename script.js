@@ -280,7 +280,21 @@ Disfruta el día sin culpa.`,
         ["Jueves","Espalda sana y firme","https://youtu.be/iUJasLbuN3Q"],
         ["Viernes","Circuito quemagrasas intenso","https://youtu.be/whT8Q2vE5Tg"]
       ]
+    },
+        sanacion:{
+      title:"ESPACIO INTERIOR",
+      subtitle:"Respira, conecta y acompaña tu proceso 🕊️",
+      days:[
+        ["Lunes","Meditación guiada para empezar la semana","https://youtu.be/3gwLDWU0Zio"],
+        ["Martes","Respiración consciente para reducir estrés","https://youtu.be/tA2kT8eSjtg"],
+        ["Miércoles","Visualización positiva del cambio","https://youtu.be/2VTloQYp_hM"],
+        ["Jueves","Relajación profunda y descanso mental","https://youtu.be/0S8JW8hSvdo"],
+        ["Viernes","Liberar tensión acumulada","https://youtu.be/IGhw9ox3NSI"],
+        ["Sábado","Meditación de la mañana GRATITUD y PAZ ☀️🙏🏼 - 5 minutos MINDFULNESS","https://youtu.be/J-At-3tIQjw"],
+        ["Domingo","Calma y preparación para la semana","https://youtu.be/KtdMJSvYYto?list=RDKtdMJSvYYto"]
+      ]
     }
+
   };
 
   document.querySelectorAll(".gymItem").forEach(item=>{
@@ -309,4 +323,5 @@ Disfruta el día sin culpa.`,
   renderHome();
 
 });
+
 
