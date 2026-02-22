@@ -18,16 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
 • Café o infusión
 • Yogur natural con nueces
 • 1 fruta (kiwi o manzana)
+• 2 huevos cocidos
 
 COMIDA
-• Verduras cocinadas (calabacín, zanahoria o judía verde)
-• Proteína suave: pescado blanco
-• Aceite de oliva (poco)
+• Verduras cocinadas
+• Pechuga de pollo
+• ½ taza arroz integral
 
 CENA (antes de las 21:00)
-• Crema de verduras o caldo
-• Huevo
-• Fruta`,
+• Sopa de Marisco `,
       work:`• Al levantarte: estiramientos 20 min
 • 2 minutos de respiración profunda`
     },
@@ -35,18 +34,17 @@ CENA (antes de las 21:00)
       diet:`DESAYUNO (9:30 aprox)
 • Café o infusión
 • 1 tostada integral
-• Medio aguacate
-• 1 huevo
+• Yugurt con Nueces
+• Tortilla a la francesa 
 
 COMIDA
-• Verduras cocinadas o salteadas suaves
-• Proteína: pechuga de pollo
-• Pequeña ración de arroz
+• Ensalada grande
+• Salmón
+• Pequeña ración patata 
 • Fruta
 
 CENA (antes de las 21:00)
-• Ensalada
-• Proteína ligera
+• Crema de verdura
 • Yogur`,
       work:`• Al levantarte: estiramientos 20 min
 • 3 minutos de respiración profunda en posición yoga`
@@ -54,18 +52,19 @@ CENA (antes de las 21:00)
     {
       diet:`DESAYUNO (9:30 aprox)
 • Café o infusión
-• Yogur natural o kéfir
-• Avena suave (2–3 cucharadas)
-• Canela y fruta cocida
+• Yogur natural o kéfir con una cucharada de chia (la chia debes ponerla en agua antes para que 
+se ponga blanda)
+• 1 Huevo cocido
+• 1 Naranja 
 
 COMIDA
-• Verduras cocinadas (brócoli, calabaza o zanahoria)
-• Proteína: salmón
-• Pequeña ración de legumbres (lentejas o garbanzos)
+• Verduras cocinadas (brócoli, berenjena y zanahoria con patatas)
+• Proteína: Sepia 
+• Fruta 
 
 CENA (antes de las 21:00)
-• Verduras cocinadas o crema
-• Proteína ligera
+• Ensalada pequeña con tomate,aguacate,rucula,espinaca,nueces,manzana
+• Yogurt
 • Sin pan, sin dulce`,
       work:`• Al levantarte: estiramientos 20 min
 • Sentadillas espalda en la pared (20 seg x 2)
@@ -75,15 +74,15 @@ CENA (antes de las 21:00)
       diet:`DESAYUNO (9:30 aprox)
 • Café o infusión
 • Tostada integral con queso crema y pavo
-• Aceite de oliva
+• frutos secos dos cucharadas 
 
 COMIDA
 • Ensalada (zanahoria, lechuga, brócoli, tomate y queso)
-• Proteína: pescado imperial
-• Pequeña ración de patata
+• Proteína: pescado azul
+• Pequeña ración de arroz
 
 CENA (antes de las 21:00)
-• Crema de verduras con jamón dulce
+• Crema de verduras con jamón dulce 
 • 1 manzana`,
       work:`• Al levantarte: estiramientos 20 min
 • Sentadillas espalda en la pared (30 seg x 2)
@@ -94,15 +93,16 @@ CENA (antes de las 21:00)
 • Café o infusión
 • Yogur natural o kéfir
 • 1 fruta (plátano)
+• 1 Huevo cocido
 
 COMIDA (más severo)
-• Verduras cocinadas (calabacín, judía verde, zanahoria)
-• Proteína ligera: entrecot
-• Naranja
+• legunbre
+• Proteína ligera: 1  entrecot
+• Naranja o mandarina 
 
 CENA (antes de las 21:00)
 • Crema de verduras o caldo
-• Sin pan, sin postre`,
+• Yogurt, sin postre`,
       work:`• Al levantarte: estiramientos 20 min
 • Sentadillas espalda en la pared (40 seg x 2)
 • 3 minutos de respiración en posición yoga`
@@ -323,5 +323,6 @@ Disfruta el día sin culpa.`,
   renderHome();
 
 });
+
 
 
