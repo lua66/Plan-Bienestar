@@ -254,7 +254,7 @@ body{
 }
 
 .commitBtn{
-  background:linear-gradient(135deg,#d62828,#ff4d4d);
+  background:linear-gradient(135deg,#c1121f,#e5383b) !important;
   border:none;
   padding:14px 22px;
   border-radius:40px;
@@ -276,4 +276,5 @@ body{
   50%{opacity:.6;}
   100%{opacity:1;}
 }
+
 
