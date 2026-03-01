@@ -18,33 +18,33 @@ document.addEventListener("DOMContentLoaded", () => {
 • Café o infusión
 • Yogur natural con nueces
 • 1 fruta (kiwi o manzana)
-• 2 huevos cocidos
+• Tortilla a la francesa
 
 COMIDA
-• Verduras cocinadas
-• Pechuga de pollo
-• ½ taza arroz integral
+• Lentejas estofadas con verduras
+• Merluza al horno
+• Fruta
 
 CENA (antes de las 21:00)
-• Sopa de Marisco `,
+• Crema de verduras `,
       work:`• Al levantarte: estiramientos 20 min
 • 2 minutos de respiración profunda`
     },
     {
       diet:`DESAYUNO (9:30 aprox)
 • Café o infusión
-• 1 tostada integral
-• Yugurt con Nueces
-• Tortilla a la francesa 
+• Avena cocida con leche vegetal
+• Manzana en trozos + canela
+• 1 Huevo cocido
 
 COMIDA
-• Ensalada grande
-• Salmón
-• Pequeña ración patata 
+• Pollo a la plancha
+• Puré de calabaza
+• Ensalada verde
 • Fruta
 
 CENA (antes de las 21:00)
-• Crema de verdura
+• Crema de verdura + pavo
 • Yogur`,
       work:`• Al levantarte: estiramientos 20 min
 • 3 minutos de respiración profunda en posición yoga`
@@ -58,12 +58,12 @@ se ponga blanda)
 • 1 Naranja 
 
 COMIDA
-• Verduras cocinadas (brócoli, berenjena y zanahoria con patatas)
-• Proteína: Sepia 
+• Verduras cocinadas (alcachofas)
+• Proteína: Pulpo
 • Fruta 
 
 CENA (antes de las 21:00)
-• Ensalada pequeña con tomate,aguacate,rucula,espinaca,nueces,manzana
+• Ensalada de atún
 • Yogurt
 • Sin pan, sin dulce`,
       work:`• Al levantarte: estiramientos 20 min
@@ -73,13 +73,14 @@ CENA (antes de las 21:00)
     {
       diet:`DESAYUNO (9:30 aprox)
 • Café o infusión
-• Tostada integral con queso crema y pavo
-• frutos secos dos cucharadas 
+• Yogur con fresa y plátano
+• frutos secos 20g 
+• Tortilla de 2 huevos con espinacas
 
 COMIDA
-• Ensalada (zanahoria, lechuga, brócoli, tomate y queso)
-• Proteína: pescado azul
-• Pequeña ración de arroz
+• 2 Berenjenas al horno
+• pescado azul
+• 2 mandarinas
 
 CENA (antes de las 21:00)
 • Crema de verduras con jamón dulce 
@@ -91,17 +92,17 @@ CENA (antes de las 21:00)
     {
       diet:`DESAYUNO (9:30 aprox)
 • Café o infusión
-• Yogur natural o kéfir
-• 1 fruta (plátano)
+• Batido de yogur natural + plátano + semillas de chía
 • 1 Huevo cocido
 
 COMIDA (más severo)
-• legunbre
-• Proteína ligera: 1  entrecot
+• Lentejas estofadas con verduras
+Lentejas cocidas con zanahoria, puerro, pimiento y tomate natural.
+• Proteína: 1  entrecot
 • Naranja o mandarina 
 
 CENA (antes de las 21:00)
-• Crema de verduras o caldo
+• Ensalada de aguacate y tomate
 • Yogurt, sin postre`,
       work:`• Al levantarte: estiramientos 20 min
 • Sentadillas espalda en la pared (40 seg x 2)
@@ -136,9 +137,9 @@ Disfruta el día sin culpa.`,
   ========================= */
 
   const STATUS = {
-    good:{ e:"😁", p:"Muy bien hoy 💚" },
-    mid: { e:"😯", p:"Vas bien, sigue 💚" },
-    bad: { e:"😴", p:"Mañana seguimos 💚" }
+    good:{ e:"😁", p:"Me siento feliz 💚" },
+    mid: { e:"😯", p:"Mira mi sonrisa, parezco un sol 💚" },
+    bad: { e:"😴", p:"Yo me amo 🥰" }
   };
 
   const PHRASES = {
@@ -153,9 +154,9 @@ Disfruta el día sin culpa.`,
       "Lo importante es volver al plan sin culpa 💚"
     ],
     bad:[
-      "Descansar también es avanzar. Sin culpa 💚",
-      "Hoy no salió, mañana sí. Tú puedes 💚",
-      "Tu objetivo sigue ahí. Solo continúa 💚"
+   " Parar también forma parte del progreso. Sin remordimientos 💚",
+   " Si hoy no fue tu día, mañana tendrás otra oportunidad 💚",
+   " Tu meta sigue esperándote. Sigue adelante 💚"
     ]
   };
 
@@ -323,6 +324,7 @@ Disfruta el día sin culpa.`,
   renderHome();
 
 });
+
 
 
 
