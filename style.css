@@ -276,5 +276,10 @@ body{
   50%{opacity:.6;}
   100%{opacity:1;}
 }
+button.commitBtn,
+.commitBtn{
+  background:#c1121f !important;
+  background-image:none !important;
+}
 
 
