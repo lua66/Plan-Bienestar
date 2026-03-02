@@ -39,6 +39,8 @@ CENA (antes de las 21:00)
 • 1 Huevo cocido 
 
 COMIDA
+• Ensalada pequeña cruda
+(lechuga + pepino + zanahoria rallada + aceite de oliva)
 • Pollo a la plancha
 • Patatas a la plancha
 • 1/2 Aguacate 
@@ -323,6 +325,7 @@ Disfruta el día sin culpa.`,
   renderHome();
 
 });
+
 
 
 
