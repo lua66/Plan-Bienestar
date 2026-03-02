@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const WEEK = [
     {
-      diet:`DESAYUNO (9:30 aprox)
+      diet:`DESAYUNO Lunes (9:30 aprox)
 • Café o infusión
 • Yogur natural con nueces
 • 1 fruta (kiwi o manzana)
@@ -23,24 +23,25 @@ document.addEventListener("DOMContentLoaded", () => {
 COMIDA
 • Lentejas estofadas con verduras
 • Merluza al horno
-• Fruta
+• Fruta Kiwi
 
 CENA (antes de las 21:00)
-• Crema de verduras `,
+• Ensalada con Lechuga, Pepino, Zanahoria rallada
+• Pera`,
       work:`• Al levantarte: estiramientos 20 min
 • 2 minutos de respiración profunda`
     },
     {
-      diet:`DESAYUNO (9:30 aprox)
+      diet:`DESAYUNO Martes (9:30 aprox)
 • Café o infusión
-• Avena cocida con leche vegetal
+• Yogurt Kefir (importante agregarlo )
 • Manzana en trozos + canela
-• 1 Huevo cocido
+• 1 Huevo cocido 
 
 COMIDA
 • Pollo a la plancha
-• Puré de calabaza
-• Ensalada verde
+• Patatas a la plancha
+• 1/2 Aguacate 
 • Fruta
 
 CENA (antes de las 21:00)
@@ -50,20 +51,18 @@ CENA (antes de las 21:00)
 • 3 minutos de respiración profunda en posición yoga`
     },
     {
-      diet:`DESAYUNO (9:30 aprox)
+      diet:`DESAYUNO Miercoles (9:30 aprox)
 • Café o infusión
-• Yogur natural o kéfir con una cucharada de chia (la chia debes ponerla en agua antes para que 
-se ponga blanda)
+• Yogur  kéfir con una cucharada de lino (Esta semana priorizamos lino sobre chía.)
 • 1 Huevo cocido
-• 1 Naranja 
 
 COMIDA
-• Verduras cocinadas (alcachofas)
+• Verduras Judias verdes con calabacin (cocido)
 • Proteína: Pulpo
-• Fruta 
+• Fruta Kiwi
 
 CENA (antes de las 21:00)
-• Ensalada de atún
+• Ensalada de atún + Nueces
 • Yogurt
 • Sin pan, sin dulce`,
       work:`• Al levantarte: estiramientos 20 min
@@ -71,45 +70,45 @@ CENA (antes de las 21:00)
 • 3 minutos de respiración en posición yoga`
     },
     {
-      diet:`DESAYUNO (9:30 aprox)
+      diet:`DESAYUNO Jueves (9:30 aprox)
 • Café o infusión
-• Yogur con fresa y plátano
-• frutos secos 20g 
-• Tortilla de 2 huevos con espinacas
+• Yogur Kefir con fresa y uvas
+• frutos secos 20g (Nueces o Almendras)
+• Tortilla de patatas y cebolla
 
 COMIDA
-• 2 Berenjenas al horno
-• pescado azul
+• 2 Berenjenas al horno 
+• Pollo al horno
 • 2 mandarinas
 
 CENA (antes de las 21:00)
-• Crema de verduras con jamón dulce 
+• Enzalada con agucate, tomate, cebolla, lechuga
 • 1 manzana`,
       work:`• Al levantarte: estiramientos 20 min
 • Sentadillas espalda en la pared (30 seg x 2)
 • 3 minutos de respiración en posición yoga`
     },
     {
-      diet:`DESAYUNO (9:30 aprox)
+      diet:`DESAYUNO Viernes (9:30 aprox)
 • Café o infusión
-• Batido de yogur natural + plátano + semillas de chía
-• 1 Huevo cocido
+• Yogur con lino molido
+• Añadir 1 manzana con piel
+• 2 tostadas con guacamole
 
 COMIDA (más severo)
-• Lentejas estofadas con verduras
-Lentejas cocidas con zanahoria, puerro, pimiento y tomate natural.
-• Proteína: 1  entrecot
+• Garbanzos cocidos con verduras.
+• Proteína: 1 Entrecot
 • Naranja o mandarina 
 
 CENA (antes de las 21:00)
-• Ensalada de aguacate y tomate
+• Ensalada de aguacate, tomate y Zanahoria rayada (crudo)
 • Yogurt, sin postre`,
       work:`• Al levantarte: estiramientos 20 min
 • Sentadillas espalda en la pared (40 seg x 2)
 • 3 minutos de respiración en posición yoga`
     },
     {
-      diet:`Hoy decides tú
+      diet:`Hoy decides tú Sábado
 ✔ Desayuna normal
 ✔ Come algo que te guste y dobla la proteína 
 ✔ Si quieres un postre, disfrutalo sin culpas
@@ -120,8 +119,8 @@ Disfruta el día sin culpa.`,
 • Cualquier movimiento cuenta`
     },
     {
-      diet:`Alimentación tranquila
-• Come despacio
+      diet:`Alimentación tranquila Domingo
+• regula tu dieta hoy sin excesos
 • Prioriza comida casera
 • Cena ligera para empezar bien la semana`,
       work:`Reto del domingo
@@ -324,6 +323,7 @@ Disfruta el día sin culpa.`,
   renderHome();
 
 });
+
 
 
 
