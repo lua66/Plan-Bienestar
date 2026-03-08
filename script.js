@@ -15,57 +15,57 @@ document.addEventListener("DOMContentLoaded", () => {
   const WEEK = [
     {
       diet:`DESAYUNO Lunes (9:30 aprox)
-• Café o infusión
-• Yogur natural con nueces
-• 1 fruta (kiwi o manzana)
-• Tortilla a la francesa
+• Café o infusión 
+• 2 Huevos cocidos
+• (No lacteos esta semana) sólo bebidas sin azucares ni añadidos (almendra, arroz, soja)
+
+Media mañana
+• 1 manzana
 
 COMIDA
-• Lentejas estofadas con verduras
-• Merluza al horno
+• Pechuga de pollo a la plancha con especies 
+• Ensalada grande (lechuga, cebolla, tomate, pepino, zanahoria) Aceite de oliva y Limón como aderezo
 • Fruta Kiwi
 
 CENA (antes de las 21:00)
-• Ensalada con Lechuga, Pepino, Zanahoria rallada
-• Pera`,
+• Crema de verduras con pavo
+• Naranja`,
       work:`• Al levantarte: estiramientos 20 min
 • 2 minutos de respiración profunda`
     },
     {
       diet:`DESAYUNO Martes (9:30 aprox)
-• Café o infusión
-• Yogurt Kefir (importante agregarlo )
-• Manzana en trozos + canela
+• Café o infusión (Menta)
+• Cóctel de frutas naturales (un boll mediano)
 • 1 Huevo cocido 
 
 COMIDA
-• Ensalada pequeña cruda
-(lechuga + pepino + zanahoria rallada + aceite de oliva)
-• Pollo a la plancha
-• Patatas a la plancha
+• Judias verdes con patata (cocidas)
+• Lubina al limón al horno
 • 1/2 Aguacate 
-• Fruta
 
 CENA (antes de las 21:00)
-• Crema de verdura + pavo
-• Yogur`,
+• Sopa de pollo
+• Fruta`,
       work:`• Al levantarte: estiramientos 20 min
 • 3 minutos de respiración profunda en posición yoga`
     },
     {
       diet:`DESAYUNO Miercoles (9:30 aprox)
-• Café o infusión
-• Yogur  kéfir con una cucharada de lino (Esta semana priorizamos lino sobre chía.)
-• 1 Huevo cocido
+• Café o infusión (Té Negro)
+• Avena + bebida vegetal
+• Frutos rojos (20g)
+
+Media mañana
+• 1 Naranja
 
 COMIDA
-• Verduras Judias verdes con calabacin (cocido)
-• Proteína: Pulpo
-• Fruta Kiwi
+• Pavo a la plancha
+• Verduras salteadas
+• Fruta Kiwi o Pera
 
 CENA (antes de las 21:00)
 • Ensalada de atún + Nueces
-• Yogurt
 • Sin pan, sin dulce`,
       work:`• Al levantarte: estiramientos 20 min
 • Sentadillas espalda en la pared (20 seg x 2)
@@ -74,17 +74,16 @@ CENA (antes de las 21:00)
     {
       diet:`DESAYUNO Jueves (9:30 aprox)
 • Café o infusión
-• Yogur Kefir con fresa y uvas
-• frutos secos 20g (Nueces o Almendras)
-• Tortilla de patatas y cebolla
+• Cóctel de frutas (fresas, uvas, Manzanas, Kiwi)
+• tortilla 1 huevo + 2 claras con espinacas
 
 COMIDA
-• 2 Berenjenas al horno 
-• Pollo al horno
-• 2 mandarinas
+• 1 Berenjena al horno 
+• Gamba roja a la plancha con aceite de hierbas
+• Ensalada pequeña (aguacate y tomate)
 
 CENA (antes de las 21:00)
-• Enzalada con agucate, tomate, cebolla, lechuga
+• Crema de verduras + atún
 • 1 manzana`,
       work:`• Al levantarte: estiramientos 20 min
 • Sentadillas espalda en la pared (30 seg x 2)
@@ -93,18 +92,20 @@ CENA (antes de las 21:00)
     {
       diet:`DESAYUNO Viernes (9:30 aprox)
 • Café o infusión
-• Yogur con lino molido
-• Añadir 1 manzana con piel
-• 2 tostadas con guacamole
+• Smoothie: bebida de almendras + plátano + avena
+• 1 huevo cocido
 
-COMIDA (más severo)
-• Garbanzos cocidos con verduras.
-• Proteína: 1 Entrecot
-• Naranja o mandarina 
+Merienda
+• 2 kiwis
+
+COMIDA
+• Ensalada mediterránea
+• Merluza a la plancha con refrito de tomate
+• Fruta Naranja o mandarina 
 
 CENA (antes de las 21:00)
-• Ensalada de aguacate, tomate y Zanahoria rayada (crudo)
-• Yogurt, sin postre`,
+• Ensalada de aguacate, tomate y Zanahoria rayada (crudo) + pavo
+• infusión de Menta`,
       work:`• Al levantarte: estiramientos 20 min
 • Sentadillas espalda en la pared (40 seg x 2)
 • 3 minutos de respiración en posición yoga`
@@ -325,6 +326,7 @@ Disfruta el día sin culpa.`,
   renderHome();
 
 });
+
 
 
 
